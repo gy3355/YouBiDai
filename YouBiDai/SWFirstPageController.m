@@ -55,7 +55,7 @@ typedef enum : NSUInteger {
     [self.view addSubview:self.tableView];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.tableHeaderView = self.headerView;
-    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeader)];
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeader)];
     
 }
 
