@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StatusNoExistBorrowView">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前可质押贷款币种" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGK-rX-KRc">
+                    <rect key="frame" x="172" y="20" width="156" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkL-bv-cAN">
+                    <rect key="frame" x="331" y="19.5" width="30" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="HEa-29-M3D"/>
+                    </constraints>
+                    <state key="normal" image="ts"/>
+                    <connections>
+                        <action selector="clickExplain:" destination="iN0-l3-epB" eventType="touchUpInside" id="vaT-GM-mSN"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py6-0n-MKG">
+                    <rect key="frame" x="40" y="51.5" width="420" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="hwQ-0I-CS0"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzn-UV-AFR">
+                    <rect key="frame" x="10" y="131.5" width="480" height="50"/>
+                    <color key="backgroundColor" red="0.35294117647058826" green="0.15686274509803921" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="N6J-Am-IHw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="马上质押借款" backgroundImage="BGcolor">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBorrow:" destination="iN0-l3-epB" eventType="touchUpInside" id="D70-eH-WHL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安全快捷的全球数字货币质押贷款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqZ-LK-sVX">
+                    <rect key="frame" x="150.5" y="194.5" width="199" height="15.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbF-Cy-6jf">
+                    <rect key="frame" x="0.0" y="220" width="500" height="10"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="mib-Pf-FrQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iqZ-LK-sVX" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="05J-mG-loQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="py6-0n-MKG" secondAttribute="trailing" constant="40" id="Djy-Dv-5M4"/>
+                <constraint firstItem="gbF-Cy-6jf" firstAttribute="top" secondItem="iqZ-LK-sVX" secondAttribute="bottom" constant="10" id="Fee-Vd-eq5"/>
+                <constraint firstAttribute="trailing" secondItem="gbF-Cy-6jf" secondAttribute="trailing" id="GN4-xE-xei"/>
+                <constraint firstItem="iqZ-LK-sVX" firstAttribute="top" secondItem="Uzn-UV-AFR" secondAttribute="bottom" constant="13" id="K7g-fW-GKd"/>
+                <constraint firstItem="kGK-rX-KRc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="LgE-Le-Bs8"/>
+                <constraint firstItem="Uzn-UV-AFR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="NYa-hf-CWh"/>
+                <constraint firstItem="Uzn-UV-AFR" firstAttribute="top" secondItem="py6-0n-MKG" secondAttribute="bottom" constant="10" id="TzE-Sf-yfp"/>
+                <constraint firstItem="pkL-bv-cAN" firstAttribute="leading" secondItem="kGK-rX-KRc" secondAttribute="trailing" constant="3" id="WSn-na-TdS"/>
+                <constraint firstItem="pkL-bv-cAN" firstAttribute="centerY" secondItem="kGK-rX-KRc" secondAttribute="centerY" id="e4g-gr-H2C"/>
+                <constraint firstAttribute="bottom" secondItem="gbF-Cy-6jf" secondAttribute="bottom" id="kLw-ba-Bpu"/>
+                <constraint firstItem="py6-0n-MKG" firstAttribute="top" secondItem="pkL-bv-cAN" secondAttribute="bottom" constant="10" id="kao-ab-MED"/>
+                <constraint firstItem="kGK-rX-KRc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="qVe-VI-x5U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Uzn-UV-AFR" secondAttribute="trailing" constant="10" id="tw4-SV-2Ao"/>
+                <constraint firstItem="py6-0n-MKG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="uOO-zT-OKV"/>
+                <constraint firstItem="gbF-Cy-6jf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="z36-hL-SIt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="BorrowBtn" destination="Uzn-UV-AFR" id="mLX-Vk-rC4"/>
+                <outlet property="scrollView" destination="py6-0n-MKG" id="ai9-Rw-odD"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BGcolor" width="375" height="253"/>
+        <image name="ts" width="15" height="15"/>
+    </resources>
+</document>

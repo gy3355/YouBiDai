@@ -1,0 +1,82 @@
+//
+//  SWPrefixHeader.pch
+//  YouBiDai
+//
+//  Created by 吴子源 on 2018/8/1.
+//  Copyright © 2018年 wu. All rights reserved.
+//
+
+#ifndef SWPrefixHeader_pch
+#define SWPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import <MJRefresh.h>
+//颜色
+
+#define GM_COLOR(f1,f2,f3,f4) [UIColor colorWithRed:f1/255.0 green:f2/255.0 blue:f3/255.0 alpha:f4]
+#define GM_RandColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1]
+
+
+///蓝色
+#define GM_BlueColor GM_COLOR(71,83,243,1)
+#define GM_RedColor GM_COLOR(255,96,86,1)
+#define GM_BlackColor GM_COLOR(51,51,51,1)
+#define GM_GaryColor GM_COLOR(115,121,143,1)  //普通灰
+#define GM_GaryMColor GM_COLOR(210,212,221,1)  //中灰
+#define GM_GaryLColor GM_COLOR(247,247,247,1)  //淡灰
+
+//bouns
+#define SCREEN_B [UIScreen mainScreen].bounds
+#define SCREEN_S [UIScreen mainScreen].bounds.size
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+
+
+
+#define IsIPhoneX ([UIScreen mainScreen].bounds.size.height==812.f ? (YES) : (NO))
+
+//导航栏高度
+#define  GMNavBarHeight  (IsIPhoneX ? 88 : 64)
+//底部Tabbar 高度
+#define GMTabBarHeight  (IsIPhoneX ? 83 : 49)
+//状态栏高度
+#define  GMStatusBarHeight  (IsIPhoneX ? 44 : 20)
+
+//searchbar搜索栏高度
+#define GMSearchBarHeight ( @available(iOS 11.0, *) ? 55 : 44)
+
+//提示语
+#define GMNETERR  @"网络异常,请重试"
+#define GMLOGIN_FAIL  @"登录失效,请重新登录"
+
+
+#define GM_weakself  __weak typeof(self) weakSelf = self
+#define GMWeakObj(type)  __weak typeof(type) weak##type = type ;
+#define GMStrongObj(type)  __strong typeof(type) type = weak##type ;
+
+
+//  富文本的控件
+#define GMAttributedString(Label,Content,AttsDic,Range)\
+\
+NSMutableAttributedString *att = [[NSMutableAttributedString alloc]initWithString:(Content)];\
+[att addAttributes:(AttsDic) range:(Range)];\
+(Label).attributedText = att;
+
+
+
+
+// view圆角
+#define GMViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]];
+
+#endif /* SWPrefixHeader_pch */
+
+
+#endif
