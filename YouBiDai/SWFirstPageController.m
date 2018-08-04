@@ -9,6 +9,8 @@
 #import "SWFirstPageController.h"
 #import "StatusNoExistBorrowView.h"
 #import "StatusExistBorrowView.h"
+#import "SWTabbarController.h"
+
 
 typedef enum : NSUInteger {
     BorrowTypeNone,
@@ -98,11 +100,22 @@ typedef enum : NSUInteger {
 
 //看数据显示已贷款还是未贷款界面
 -(void)setupStatusView{
-    BOOL isExistBorrow = YES;
+    BOOL isExistBorrow = NO;
+    BOOL isMoreBorrow = NO;
     if (isExistBorrow) {
         self.existView = [[NSBundle mainBundle]loadNibNamed:@"StatusExistBorrowView" owner:nil options:nil].firstObject;
+        
+        //如果是多个，则height350
+        if (isMoreBorrow) {
+            self.statusView.height = 350;
+        }else{
+            self.statusView.height = 300;
+            
+            
+        }
+
         self.existView.frame = self.statusView.bounds;
-        self.existView.y = 0;
+
         self.existView.dataDic = @{@"dd":@2};
         
 
@@ -113,12 +126,13 @@ typedef enum : NSUInteger {
         [self.statusView addSubview:self.existView];
     }else{
         self.noExistView = [[NSBundle mainBundle]loadNibNamed:@"StatusNoExistBorrowView" owner:nil options:nil].firstObject;
-        
+        self.statusView.height = 230;
         self.noExistView.frame = self.statusView.bounds;
-        self.noExistView.y = 0;
         self.noExistView.dataArr = @[@"BTC",@"ETH",@"GTC",@"KDG",@"GYLX",@"GDDQA",@"XQC",@"RDC"];
         [self.noExistView setBorrowJump:^{
             NSLog(@"外面跳转借款");
+            SWTabbarController *tab = (SWTabbarController*)[[UIApplication sharedApplication] delegate].window.rootViewController;
+            tab.selectedIndex = 1;
         }];
         [self.noExistView setExplainJump:^{
             NSLog(@"外面跳转说明");
@@ -128,8 +142,7 @@ typedef enum : NSUInteger {
         }];
         [self.statusView addSubview:self.noExistView];
     }
-    
-   
+       self.headerView.height = self.adScrollView.height + self.statusView.height;
     
 }
 

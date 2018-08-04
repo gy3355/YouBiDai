@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C808A412114367E0031BF2C /* SWBorrowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A3F2114367E0031BF2C /* SWBorrowController.m */; };
+		1C808A422114367E0031BF2C /* SWBorrowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A402114367E0031BF2C /* SWBorrowController.xib */; };
+		1C808A4521145FFA0031BF2C /* DYO_PickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4421145FFA0031BF2C /* DYO_PickView.m */; };
+		1C808A4821153F630031BF2C /* CheckDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4721153F630031BF2C /* CheckDetailController.m */; };
+		1C808A4B211546F80031BF2C /* CheckHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4A211546F80031BF2C /* CheckHeaderView.m */; };
+		1C808A4E211547240031BF2C /* CheckFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4D211547240031BF2C /* CheckFooterView.m */; };
+		1C808A50211547360031BF2C /* CheckHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A4F211547360031BF2C /* CheckHeaderView.xib */; };
+		1C808A52211581CE0031BF2C /* CheckFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A51211581CE0031BF2C /* CheckFooterView.xib */; };
+		1C808A562115A46D0031BF2C /* SWPayBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A542115A46D0031BF2C /* SWPayBController.m */; };
+		1C808A572115A46D0031BF2C /* SWPayBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A552115A46D0031BF2C /* SWPayBController.xib */; };
 		35D57175211186A100015D77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D57174211186A100015D77 /* AppDelegate.m */; };
 		35D5717B211186A100015D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D57179211186A100015D77 /* Main.storyboard */; };
 		35D5717D211186A400015D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D5717C211186A400015D77 /* Assets.xcassets */; };
@@ -17,7 +27,6 @@
 		35D571A72111882000015D77 /* SWTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D571A62111882000015D77 /* SWTabbarController.m */; };
 		35D571AA211188DB00015D77 /* SWNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D571A9211188DB00015D77 /* SWNavController.m */; };
 		35D571AD21118C7F00015D77 /* SWFirstPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D571AC21118C7F00015D77 /* SWFirstPageController.m */; };
-		35D571B021118D0900015D77 /* SWBorrowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D571AF21118D0900015D77 /* SWBorrowController.m */; };
 		35D571B321118D7300015D77 /* SWMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D571B221118D7300015D77 /* SWMineController.m */; };
 		35D571B6211193F300015D77 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D571B5211193F300015D77 /* UIImage+Extension.m */; };
 		35D571C321129CB400015D77 /* StatusExistBorrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D571C221129CB400015D77 /* StatusExistBorrowView.m */; };
@@ -46,6 +55,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C808A3E2114367E0031BF2C /* SWBorrowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBorrowController.h; sourceTree = "<group>"; };
+		1C808A3F2114367E0031BF2C /* SWBorrowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBorrowController.m; sourceTree = "<group>"; };
+		1C808A402114367E0031BF2C /* SWBorrowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWBorrowController.xib; sourceTree = "<group>"; };
+		1C808A4321145FFA0031BF2C /* DYO_PickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYO_PickView.h; sourceTree = "<group>"; };
+		1C808A4421145FFA0031BF2C /* DYO_PickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYO_PickView.m; sourceTree = "<group>"; };
+		1C808A4621153F630031BF2C /* CheckDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckDetailController.h; sourceTree = "<group>"; };
+		1C808A4721153F630031BF2C /* CheckDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckDetailController.m; sourceTree = "<group>"; };
+		1C808A49211546F80031BF2C /* CheckHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckHeaderView.h; sourceTree = "<group>"; };
+		1C808A4A211546F80031BF2C /* CheckHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckHeaderView.m; sourceTree = "<group>"; };
+		1C808A4C211547240031BF2C /* CheckFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckFooterView.h; sourceTree = "<group>"; };
+		1C808A4D211547240031BF2C /* CheckFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckFooterView.m; sourceTree = "<group>"; };
+		1C808A4F211547360031BF2C /* CheckHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckHeaderView.xib; sourceTree = "<group>"; };
+		1C808A51211581CE0031BF2C /* CheckFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckFooterView.xib; sourceTree = "<group>"; };
+		1C808A532115A46D0031BF2C /* SWPayBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWPayBController.h; sourceTree = "<group>"; };
+		1C808A542115A46D0031BF2C /* SWPayBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWPayBController.m; sourceTree = "<group>"; };
+		1C808A552115A46D0031BF2C /* SWPayBController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWPayBController.xib; sourceTree = "<group>"; };
 		3127BD370F8A2F3244140E22 /* Pods-YouBiDai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouBiDai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouBiDai/Pods-YouBiDai.debug.xcconfig"; sourceTree = "<group>"; };
 		35D57170211186A100015D77 /* YouBiDai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouBiDai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D57173211186A100015D77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,8 +92,6 @@
 		35D571A9211188DB00015D77 /* SWNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWNavController.m; sourceTree = "<group>"; };
 		35D571AB21118C7F00015D77 /* SWFirstPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWFirstPageController.h; sourceTree = "<group>"; };
 		35D571AC21118C7F00015D77 /* SWFirstPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWFirstPageController.m; sourceTree = "<group>"; };
-		35D571AE21118D0900015D77 /* SWBorrowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBorrowController.h; sourceTree = "<group>"; };
-		35D571AF21118D0900015D77 /* SWBorrowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBorrowController.m; sourceTree = "<group>"; };
 		35D571B121118D7300015D77 /* SWMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWMineController.h; sourceTree = "<group>"; };
 		35D571B221118D7300015D77 /* SWMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWMineController.m; sourceTree = "<group>"; };
 		35D571B4211193F300015D77 /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -145,8 +168,14 @@
 				35D571A9211188DB00015D77 /* SWNavController.m */,
 				35D571AB21118C7F00015D77 /* SWFirstPageController.h */,
 				35D571AC21118C7F00015D77 /* SWFirstPageController.m */,
-				35D571AE21118D0900015D77 /* SWBorrowController.h */,
-				35D571AF21118D0900015D77 /* SWBorrowController.m */,
+				1C808A3E2114367E0031BF2C /* SWBorrowController.h */,
+				1C808A3F2114367E0031BF2C /* SWBorrowController.m */,
+				1C808A402114367E0031BF2C /* SWBorrowController.xib */,
+				1C808A4621153F630031BF2C /* CheckDetailController.h */,
+				1C808A4721153F630031BF2C /* CheckDetailController.m */,
+				1C808A532115A46D0031BF2C /* SWPayBController.h */,
+				1C808A542115A46D0031BF2C /* SWPayBController.m */,
+				1C808A552115A46D0031BF2C /* SWPayBController.xib */,
 				35D571B121118D7300015D77 /* SWMineController.h */,
 				35D571B221118D7300015D77 /* SWMineController.m */,
 				35D571BB2111C87B00015D77 /* View */,
@@ -181,6 +210,8 @@
 		35D571B82111A4E600015D77 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				1C808A4321145FFA0031BF2C /* DYO_PickView.h */,
+				1C808A4421145FFA0031BF2C /* DYO_PickView.m */,
 				35D571B4211193F300015D77 /* UIImage+Extension.h */,
 				35D571B5211193F300015D77 /* UIImage+Extension.m */,
 				35D571B92111AB2100015D77 /* UIView+Extension.h */,
@@ -199,6 +230,12 @@
 				35D571C621129D5700015D77 /* StatusNoExistBorrowView.h */,
 				35D571C721129D5700015D77 /* StatusNoExistBorrowView.m */,
 				35D571C921129D9600015D77 /* StatusNoExistBorrowView.xib */,
+				1C808A49211546F80031BF2C /* CheckHeaderView.h */,
+				1C808A4A211546F80031BF2C /* CheckHeaderView.m */,
+				1C808A4F211547360031BF2C /* CheckHeaderView.xib */,
+				1C808A4C211547240031BF2C /* CheckFooterView.h */,
+				1C808A4D211547240031BF2C /* CheckFooterView.m */,
+				1C808A51211581CE0031BF2C /* CheckFooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +321,7 @@
 		35D57168211186A100015D77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SW;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = wu;
 				TargetAttributes = {
@@ -327,6 +365,10 @@
 			files = (
 				35D57180211186A400015D77 /* LaunchScreen.storyboard in Resources */,
 				35D5717D211186A400015D77 /* Assets.xcassets in Resources */,
+				1C808A422114367E0031BF2C /* SWBorrowController.xib in Resources */,
+				1C808A572115A46D0031BF2C /* SWPayBController.xib in Resources */,
+				1C808A50211547360031BF2C /* CheckHeaderView.xib in Resources */,
+				1C808A52211581CE0031BF2C /* CheckFooterView.xib in Resources */,
 				35D571CA21129D9700015D77 /* StatusNoExistBorrowView.xib in Resources */,
 				35D571C521129CC700015D77 /* StatusExistBorrowView.xib in Resources */,
 				35D5717B211186A100015D77 /* Main.storyboard in Resources */,
@@ -398,16 +440,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D571CB2112BE0D00015D77 /* UIView+Extension.m in Sources */,
-				35D571B021118D0900015D77 /* SWBorrowController.m in Sources */,
 				35D571AA211188DB00015D77 /* SWNavController.m in Sources */,
+				1C808A4E211547240031BF2C /* CheckFooterView.m in Sources */,
+				1C808A4521145FFA0031BF2C /* DYO_PickView.m in Sources */,
 				35D571A72111882000015D77 /* SWTabbarController.m in Sources */,
+				1C808A4B211546F80031BF2C /* CheckHeaderView.m in Sources */,
 				35D571C821129D5700015D77 /* StatusNoExistBorrowView.m in Sources */,
+				1C808A562115A46D0031BF2C /* SWPayBController.m in Sources */,
 				35D571B321118D7300015D77 /* SWMineController.m in Sources */,
+				1C808A4821153F630031BF2C /* CheckDetailController.m in Sources */,
 				35D571C321129CB400015D77 /* StatusExistBorrowView.m in Sources */,
 				35D571AD21118C7F00015D77 /* SWFirstPageController.m in Sources */,
 				35D57183211186A400015D77 /* main.m in Sources */,
 				35D57175211186A100015D77 /* AppDelegate.m in Sources */,
 				35D571B6211193F300015D77 /* UIImage+Extension.m in Sources */,
+				1C808A412114367E0031BF2C /* SWBorrowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = "$SRCROOT/YouBiDai/Basic/SWPrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/YouBiDai/Basic/SWPrefixHeader.pch;
 				INFOPLIST_FILE = YouBiDai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,7 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = "$SRCROOT/YouBiDai/Basic/SWPrefixHeader.pch";
+				GCC_PREFIX_HEADER = $SRCROOT/YouBiDai/Basic/SWPrefixHeader.pch;
 				INFOPLIST_FILE = YouBiDai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

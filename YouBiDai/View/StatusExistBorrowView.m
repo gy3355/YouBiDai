@@ -39,9 +39,13 @@
 */
 -(void)setDataDic:(NSDictionary *)dataDic{
     //拥有多个借贷的时候
-    NSInteger num = 3;
+    NSInteger num = 1;
     self.pageControl.numberOfPages = num;
     self.pageControl.currentPage = 0;
+    
+
+    self.pageControl.hidden = num==1?YES:NO;
+
     
     for (NSInteger i=0; i<num; i++) {
         StatusExistBorrowView *detailV = [[NSBundle mainBundle]loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil].lastObject;
@@ -61,6 +65,14 @@
     NSInteger index = round(point.x/scrollView.frame.size.width);
     self.pageControl.currentPage = index;
 
+}
+- (IBAction)redeemB:(UIButton *)sender {
+    
+    NSLog(@"还款赎回");
+}
+
+- (IBAction)addB:(UIButton *)sender {
+    NSLog(@"补币进来");
 }
 
 @end
