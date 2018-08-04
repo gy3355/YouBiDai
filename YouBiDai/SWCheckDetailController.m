@@ -9,7 +9,7 @@
 #import "SWCheckDetailController.h"
 #import "CheckHeaderView.h"
 #import "CheckFooterView.h"
-
+#import "SWPayBController.h"
 
 @interface SWCheckDetailController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
@@ -112,7 +112,8 @@
     }];
     [alertCtl addAction:leftAct];
     UIAlertAction *rightAct = [UIAlertAction actionWithTitle:rightT style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        SWPayBController *payB = [SWPayBController new];
+        [self.navigationController pushViewController:payB animated:YES];
     }];
     [alertCtl addAction:rightAct];
     [self presentViewController:alertCtl animated:YES completion:nil];

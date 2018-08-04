@@ -9,6 +9,11 @@
 #import "SWPayBController.h"
 
 @interface SWPayBController ()
+@property (weak, nonatomic) IBOutlet UIImageView *QRcodeImage;
+@property (weak, nonatomic) IBOutlet UILabel *addressLab;
+
+@property (weak, nonatomic) IBOutlet UIButton *addressCopyBtn;
+@property (weak, nonatomic) IBOutlet UIButton *readyBtn;
 
 @end
 
@@ -16,22 +21,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self setupBasic];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupBasic{
+    self.navigationItem.title = @"充币";
 }
 
-/*
-#pragma mark - Navigation
+- (IBAction)addressCopy:(UIButton *)sender {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    GMMBProgreessHUD(self.view, @"复制成功！");
+    
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    NSString *str = self.addressLab.text.length==0?@"":self.addressLab.text;
+    pasteboard.string = str;
+
 }
-*/
+
+
+- (IBAction)readyNext:(UIButton *)sender {
+    
+}
 
 @end

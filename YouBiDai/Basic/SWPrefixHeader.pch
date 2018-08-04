@@ -81,6 +81,15 @@ NSMutableAttributedString *att = [[NSMutableAttributedString alloc]initWithStrin
 [View.layer setBorderWidth:(Width)];\
 [View.layer setBorderColor:[Color CGColor]];
 
+//提示语
+#define GMMBProgreessHUD(View,Text)\
+\
+MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:View animated:YES];\
+hud.mode = MBProgressHUDModeText;\
+hud.labelText = Text;\
+[hud hide:YES afterDelay:2.0];
+
+
 #endif /* SWPrefixHeader_pch */
 
 
