@@ -1,5 +1,5 @@
 //
-//  CheckDetailController.h
+//  SWCheckDetailController.h
 //  YouBiDai
 //
 //  Created by yuan on 2018/8/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CheckDetailController : UIViewController
+@interface SWCheckDetailController : UIViewController
 
 
 /**

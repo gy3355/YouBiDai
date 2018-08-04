@@ -1,22 +1,22 @@
 //
-//  CheckDetailController.m
+//  SWCheckDetailController.m
 //  YouBiDai
 //
 //  Created by yuan on 2018/8/4.
 //  Copyright © 2018年 wu. All rights reserved.
 //
 
-#import "CheckDetailController.h"
+#import "SWCheckDetailController.h"
 #import "CheckHeaderView.h"
 #import "CheckFooterView.h"
 
 
-@interface CheckDetailController ()<UITableViewDelegate,UITableViewDataSource>
+@interface SWCheckDetailController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 
 @end
 
-@implementation CheckDetailController
+@implementation SWCheckDetailController
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

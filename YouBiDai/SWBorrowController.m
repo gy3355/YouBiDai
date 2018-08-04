@@ -7,7 +7,7 @@
 //
 
 #import "SWBorrowController.h"
-#import "CheckDetailController.h"
+#import "SWCheckDetailController.h"
 
 @interface SWBorrowController ()<DYO_PickViewDelegate>
 
@@ -60,7 +60,7 @@
 
 /* 申请借款确认**/
 - (IBAction)applyForBorrow:(UIButton *)sender {
-    CheckDetailController *check = [CheckDetailController new];
+    SWCheckDetailController *check = [SWCheckDetailController new];
     check.dataArr = @[@[@"手续费",@"900元"],
                       @[@"优惠券",@"50元"],
                       @[@"到账金额",@"19000元"],

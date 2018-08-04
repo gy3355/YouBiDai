@@ -10,7 +10,7 @@
 		1C808A412114367E0031BF2C /* SWBorrowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A3F2114367E0031BF2C /* SWBorrowController.m */; };
 		1C808A422114367E0031BF2C /* SWBorrowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A402114367E0031BF2C /* SWBorrowController.xib */; };
 		1C808A4521145FFA0031BF2C /* DYO_PickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4421145FFA0031BF2C /* DYO_PickView.m */; };
-		1C808A4821153F630031BF2C /* CheckDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4721153F630031BF2C /* CheckDetailController.m */; };
+		1C808A4821153F630031BF2C /* SWCheckDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4721153F630031BF2C /* SWCheckDetailController.m */; };
 		1C808A4B211546F80031BF2C /* CheckHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4A211546F80031BF2C /* CheckHeaderView.m */; };
 		1C808A4E211547240031BF2C /* CheckFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4D211547240031BF2C /* CheckFooterView.m */; };
 		1C808A50211547360031BF2C /* CheckHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A4F211547360031BF2C /* CheckHeaderView.xib */; };
@@ -60,8 +60,8 @@
 		1C808A402114367E0031BF2C /* SWBorrowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWBorrowController.xib; sourceTree = "<group>"; };
 		1C808A4321145FFA0031BF2C /* DYO_PickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYO_PickView.h; sourceTree = "<group>"; };
 		1C808A4421145FFA0031BF2C /* DYO_PickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYO_PickView.m; sourceTree = "<group>"; };
-		1C808A4621153F630031BF2C /* CheckDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckDetailController.h; sourceTree = "<group>"; };
-		1C808A4721153F630031BF2C /* CheckDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckDetailController.m; sourceTree = "<group>"; };
+		1C808A4621153F630031BF2C /* SWCheckDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWCheckDetailController.h; sourceTree = "<group>"; };
+		1C808A4721153F630031BF2C /* SWCheckDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWCheckDetailController.m; sourceTree = "<group>"; };
 		1C808A49211546F80031BF2C /* CheckHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckHeaderView.h; sourceTree = "<group>"; };
 		1C808A4A211546F80031BF2C /* CheckHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckHeaderView.m; sourceTree = "<group>"; };
 		1C808A4C211547240031BF2C /* CheckFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckFooterView.h; sourceTree = "<group>"; };
@@ -171,8 +171,8 @@
 				1C808A3E2114367E0031BF2C /* SWBorrowController.h */,
 				1C808A3F2114367E0031BF2C /* SWBorrowController.m */,
 				1C808A402114367E0031BF2C /* SWBorrowController.xib */,
-				1C808A4621153F630031BF2C /* CheckDetailController.h */,
-				1C808A4721153F630031BF2C /* CheckDetailController.m */,
+				1C808A4621153F630031BF2C /* SWCheckDetailController.h */,
+				1C808A4721153F630031BF2C /* SWCheckDetailController.m */,
 				1C808A532115A46D0031BF2C /* SWPayBController.h */,
 				1C808A542115A46D0031BF2C /* SWPayBController.m */,
 				1C808A552115A46D0031BF2C /* SWPayBController.xib */,
@@ -448,7 +448,7 @@
 				35D571C821129D5700015D77 /* StatusNoExistBorrowView.m in Sources */,
 				1C808A562115A46D0031BF2C /* SWPayBController.m in Sources */,
 				35D571B321118D7300015D77 /* SWMineController.m in Sources */,
-				1C808A4821153F630031BF2C /* CheckDetailController.m in Sources */,
+				1C808A4821153F630031BF2C /* SWCheckDetailController.m in Sources */,
 				35D571C321129CB400015D77 /* StatusExistBorrowView.m in Sources */,
 				35D571AD21118C7F00015D77 /* SWFirstPageController.m in Sources */,
 				35D57183211186A400015D77 /* main.m in Sources */,
