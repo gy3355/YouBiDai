@@ -20,7 +20,10 @@
     [super viewDidLoad];
     GMViewBorderRadius(self.loginBtn, 5, 0, [UIColor clearColor]);
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+}
 /*关闭视图**/
 - (IBAction)clickCloseView:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
