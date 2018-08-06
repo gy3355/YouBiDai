@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4DE1432117E3D30038BBE8 /* SWMineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4DE1422117E3D30038BBE8 /* SWMineController.xib */; };
 		1C808A412114367E0031BF2C /* SWBorrowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A3F2114367E0031BF2C /* SWBorrowController.m */; };
 		1C808A422114367E0031BF2C /* SWBorrowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A402114367E0031BF2C /* SWBorrowController.xib */; };
 		1C808A4521145FFA0031BF2C /* DYO_PickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4421145FFA0031BF2C /* DYO_PickView.m */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C4DE1422117E3D30038BBE8 /* SWMineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWMineController.xib; sourceTree = "<group>"; };
 		1C808A3E2114367E0031BF2C /* SWBorrowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBorrowController.h; sourceTree = "<group>"; };
 		1C808A3F2114367E0031BF2C /* SWBorrowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBorrowController.m; sourceTree = "<group>"; };
 		1C808A402114367E0031BF2C /* SWBorrowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWBorrowController.xib; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				1C808A552115A46D0031BF2C /* SWPayBController.xib */,
 				35D571B121118D7300015D77 /* SWMineController.h */,
 				35D571B221118D7300015D77 /* SWMineController.m */,
+				1C4DE1422117E3D30038BBE8 /* SWMineController.xib */,
 				35D571BB2111C87B00015D77 /* View */,
 				35D571B82111A4E600015D77 /* Basic */,
 				35D57179211186A100015D77 /* Main.storyboard */,
@@ -371,6 +374,7 @@
 				1C808A52211581CE0031BF2C /* CheckFooterView.xib in Resources */,
 				35D571CA21129D9700015D77 /* StatusNoExistBorrowView.xib in Resources */,
 				35D571C521129CC700015D77 /* StatusExistBorrowView.xib in Resources */,
+				1C4DE1432117E3D30038BBE8 /* SWMineController.xib in Resources */,
 				35D5717B211186A100015D77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -612,7 +616,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -625,8 +629,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN8SVFASQ5;
 				GCC_PREFIX_HEADER = $SRCROOT/YouBiDai/Basic/SWPrefixHeader.pch;
 				INFOPLIST_FILE = YouBiDai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,8 +649,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN8SVFASQ5;
 				GCC_PREFIX_HEADER = $SRCROOT/YouBiDai/Basic/SWPrefixHeader.pch;
 				INFOPLIST_FILE = YouBiDai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

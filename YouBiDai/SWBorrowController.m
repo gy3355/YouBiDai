@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *tipsBtn;
 @property (weak, nonatomic) IBOutlet UIButton *certifiBtn;
 @property (weak, nonatomic) IBOutlet UIButton *bType;
+@property (weak, nonatomic) IBOutlet UILabel *daysLab;
 
 
 @property (strong,nonatomic)DYO_PickView *pickView;
@@ -56,6 +57,7 @@
     NSInteger index = round(sender.value);
     NSLog(@"%lf--%ld",sender.value,index);
     sender.value = index;
+    self.daysLab.text = [NSString stringWithFormat:@"%ld天",7+index];
 }
 
 /* 申请借款确认**/

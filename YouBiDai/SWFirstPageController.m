@@ -70,7 +70,7 @@ typedef enum : NSUInteger {
         /* 顶部按钮**/
         UIButton *rightBtn = [[UIButton alloc]initWithFrame:CGRectMake(_headerView.width-100, GMStatusBarHeight, 80, 30)];
         [rightBtn setTitle:@"抵押规则" forState:0];
-        rightBtn.titleLabel.font = [UIFont systemFontOfSize:17 weight:UIFontWeightBold];
+        rightBtn.titleLabel.font = [UIFont systemFontOfSize:15 weight:UIFontWeightBold];
         [rightBtn setTitleColor:[UIColor whiteColor] forState:0];
         [rightBtn addTarget:self action:@selector(clickRule) forControlEvents:UIControlEventTouchUpInside];
         [_headerView insertSubview:rightBtn aboveSubview:_adScrollView];

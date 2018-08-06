@@ -18,9 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
+//    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
  
     [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
+    UINavigationBar *navigationBar = self.navigationBar;
+
+    [navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]]
+                       forBarPosition:UIBarPositionAny
+                           barMetrics:UIBarMetricsDefault];
+    [navigationBar setShadowImage:[UIImage new]];
 
 }
 

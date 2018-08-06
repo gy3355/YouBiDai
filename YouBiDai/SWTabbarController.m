@@ -25,7 +25,7 @@
 
     [self addChildVc:[SWBorrowController  new] title:@"借款" navtitle:@"抵押借款" image:@"jk_1" selectedImage:@"jk"];
     
-    [self addChildVc:[SWMineController  new] title:@"我" navtitle:@"我" image:@"w_1" selectedImage:@"w"];
+    [self addChildVc:[SWMineController  new] title:@"我" navtitle:@"我的" image:@"w_1" selectedImage:@"w"];
     
 
 }

@@ -16,22 +16,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+
+    [self setupBasic];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setupBasic{
+    /* 顶部按钮**/
+    UIButton *leftBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 60, 30)];
+    [leftBtn setImage:[UIImage imageNamed:@"lw_2"] forState:0];
+    [leftBtn addTarget:self action:@selector(clickGift) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];
+    
+    UIButton *rightBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 60, 30)];
+    [rightBtn setImage:[UIImage imageNamed:@"sz"] forState:0];
+    [rightBtn addTarget:self action:@selector(clickSetting) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
+}
+/**
+ 视图点击
+
+ @param sender view
+ */
+- (IBAction)tapViewIndex:(UITapGestureRecognizer *)sender {
+    NSLog(@"%ld",sender.view.tag);
+    
+}
+//点击优惠券
+-(void)clickGift{
+    
+}
+//点击设置
+-(void)clickSetting{
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
