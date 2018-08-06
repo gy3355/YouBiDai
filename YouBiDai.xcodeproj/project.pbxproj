@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1C4DE1432117E3D30038BBE8 /* SWMineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4DE1422117E3D30038BBE8 /* SWMineController.xib */; };
+		1C4DE147211826E10038BBE8 /* SWLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DE145211826E10038BBE8 /* SWLoginController.m */; };
+		1C4DE148211826E10038BBE8 /* SWLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4DE146211826E10038BBE8 /* SWLoginController.xib */; };
+		1C4DE14C2118277A0038BBE8 /* SWRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DE14A2118277A0038BBE8 /* SWRegisterController.m */; };
+		1C4DE14D2118277A0038BBE8 /* SWRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4DE14B2118277A0038BBE8 /* SWRegisterController.xib */; };
 		1C808A412114367E0031BF2C /* SWBorrowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A3F2114367E0031BF2C /* SWBorrowController.m */; };
 		1C808A422114367E0031BF2C /* SWBorrowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A402114367E0031BF2C /* SWBorrowController.xib */; };
 		1C808A4521145FFA0031BF2C /* DYO_PickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4421145FFA0031BF2C /* DYO_PickView.m */; };
@@ -57,6 +61,12 @@
 
 /* Begin PBXFileReference section */
 		1C4DE1422117E3D30038BBE8 /* SWMineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWMineController.xib; sourceTree = "<group>"; };
+		1C4DE144211826E10038BBE8 /* SWLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWLoginController.h; sourceTree = "<group>"; };
+		1C4DE145211826E10038BBE8 /* SWLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWLoginController.m; sourceTree = "<group>"; };
+		1C4DE146211826E10038BBE8 /* SWLoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWLoginController.xib; sourceTree = "<group>"; };
+		1C4DE1492118277A0038BBE8 /* SWRegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRegisterController.h; sourceTree = "<group>"; };
+		1C4DE14A2118277A0038BBE8 /* SWRegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRegisterController.m; sourceTree = "<group>"; };
+		1C4DE14B2118277A0038BBE8 /* SWRegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWRegisterController.xib; sourceTree = "<group>"; };
 		1C808A3E2114367E0031BF2C /* SWBorrowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBorrowController.h; sourceTree = "<group>"; };
 		1C808A3F2114367E0031BF2C /* SWBorrowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBorrowController.m; sourceTree = "<group>"; };
 		1C808A402114367E0031BF2C /* SWBorrowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWBorrowController.xib; sourceTree = "<group>"; };
@@ -181,6 +191,12 @@
 				35D571B121118D7300015D77 /* SWMineController.h */,
 				35D571B221118D7300015D77 /* SWMineController.m */,
 				1C4DE1422117E3D30038BBE8 /* SWMineController.xib */,
+				1C4DE144211826E10038BBE8 /* SWLoginController.h */,
+				1C4DE145211826E10038BBE8 /* SWLoginController.m */,
+				1C4DE146211826E10038BBE8 /* SWLoginController.xib */,
+				1C4DE1492118277A0038BBE8 /* SWRegisterController.h */,
+				1C4DE14A2118277A0038BBE8 /* SWRegisterController.m */,
+				1C4DE14B2118277A0038BBE8 /* SWRegisterController.xib */,
 				35D571BB2111C87B00015D77 /* View */,
 				35D571B82111A4E600015D77 /* Basic */,
 				35D57179211186A100015D77 /* Main.storyboard */,
@@ -369,10 +385,12 @@
 				35D57180211186A400015D77 /* LaunchScreen.storyboard in Resources */,
 				35D5717D211186A400015D77 /* Assets.xcassets in Resources */,
 				1C808A422114367E0031BF2C /* SWBorrowController.xib in Resources */,
+				1C4DE148211826E10038BBE8 /* SWLoginController.xib in Resources */,
 				1C808A572115A46D0031BF2C /* SWPayBController.xib in Resources */,
 				1C808A50211547360031BF2C /* CheckHeaderView.xib in Resources */,
 				1C808A52211581CE0031BF2C /* CheckFooterView.xib in Resources */,
 				35D571CA21129D9700015D77 /* StatusNoExistBorrowView.xib in Resources */,
+				1C4DE14D2118277A0038BBE8 /* SWRegisterController.xib in Resources */,
 				35D571C521129CC700015D77 /* StatusExistBorrowView.xib in Resources */,
 				1C4DE1432117E3D30038BBE8 /* SWMineController.xib in Resources */,
 				35D5717B211186A100015D77 /* Main.storyboard in Resources */,
@@ -445,6 +463,7 @@
 			files = (
 				35D571CB2112BE0D00015D77 /* UIView+Extension.m in Sources */,
 				35D571AA211188DB00015D77 /* SWNavController.m in Sources */,
+				1C4DE147211826E10038BBE8 /* SWLoginController.m in Sources */,
 				1C808A4E211547240031BF2C /* CheckFooterView.m in Sources */,
 				1C808A4521145FFA0031BF2C /* DYO_PickView.m in Sources */,
 				35D571A72111882000015D77 /* SWTabbarController.m in Sources */,
@@ -452,6 +471,7 @@
 				35D571C821129D5700015D77 /* StatusNoExistBorrowView.m in Sources */,
 				1C808A562115A46D0031BF2C /* SWPayBController.m in Sources */,
 				35D571B321118D7300015D77 /* SWMineController.m in Sources */,
+				1C4DE14C2118277A0038BBE8 /* SWRegisterController.m in Sources */,
 				1C808A4821153F630031BF2C /* SWCheckDetailController.m in Sources */,
 				35D571C321129CB400015D77 /* StatusExistBorrowView.m in Sources */,
 				35D571AD21118C7F00015D77 /* SWFirstPageController.m in Sources */,

@@ -7,6 +7,8 @@
 //
 
 #import "SWMineController.h"
+#import "SWLoginController.h"
+#import "SWNavController.h"
 
 @interface SWMineController ()
 
@@ -40,6 +42,21 @@
  */
 - (IBAction)tapViewIndex:(UITapGestureRecognizer *)sender {
     NSLog(@"%ld",sender.view.tag);
+    switch (sender.view.tag) {
+        case 0:
+            //个人资料->暂时转登录
+        {
+            SWNavController *nav = [[SWNavController alloc]initWithRootViewController:[SWLoginController new]];
+            
+            [self presentViewController:nav animated:YES completion:nil];
+        }
+            
+            
+            break;
+            
+        default:
+            break;
+    }
     
 }
 //点击优惠券

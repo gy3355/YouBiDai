@@ -8,7 +8,7 @@
 
 #import "SWNavController.h"
 #import "SWFirstPageController.h"
-
+#import "SWLoginController.h"
 @interface SWNavController ()
 
 @end
@@ -55,7 +55,7 @@
     self.navigationBarHidden = NO;
     if (self.viewControllers.count==0) {
 //        viewController.navigationItem.leftBarButtonItem = nil;
-        if ([viewController isKindOfClass:[SWFirstPageController class]]) {
+        if ([viewController isKindOfClass:[SWFirstPageController class]]||[viewController isKindOfClass:[SWLoginController class]]) {
             self.navigationBarHidden = YES;
         }
     }else if (self.viewControllers.count > 0) {
@@ -66,6 +66,7 @@
     
     [super pushViewController:viewController animated:animated];
 }
+
 
 - (void)returnBack{
     [self popViewControllerAnimated:YES];
