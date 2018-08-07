@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWBorrowController">
             <connections>
+                <outlet property="applyBtn" destination="jsh-sL-rLR" id="0r5-Yx-Wht"/>
                 <outlet property="bType" destination="bRw-87-H9N" id="nUp-bL-SuP"/>
                 <outlet property="certifiBtn" destination="q1Q-21-TEZ" id="DdV-Xb-1ix"/>
                 <outlet property="daysLab" destination="lul-dZ-Was" id="Oqu-NE-LxX"/>
@@ -197,7 +198,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aed-dc-Klk" userLabel="金额">
                                     <rect key="frame" x="0.0" y="61" width="375" height="60"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入借款金额（不低于2000元）" textAlignment="right" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-W3-C5L">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入金额(不低于2000元)" textAlignment="right" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-W3-C5L">
                                             <rect key="frame" x="120" y="0.0" width="240" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="240" id="qsJ-pd-O7s"/>

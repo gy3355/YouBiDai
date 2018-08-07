@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *certifiBtn;
 @property (weak, nonatomic) IBOutlet UIButton *bType;
 @property (weak, nonatomic) IBOutlet UILabel *daysLab;
+@property (weak, nonatomic) IBOutlet UIButton *applyBtn;
 
 
 @property (strong,nonatomic)DYO_PickView *pickView;
@@ -35,6 +36,7 @@
     [rightBtn setTitleColor:GM_GaryColor forState:0];
     [rightBtn addTarget:self action:@selector(clickBorrowRecord) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
+    GMViewBorderRadius(self.applyBtn, 5, 0, [UIColor clearColor]);
 }
 
 #pragma mark 交互

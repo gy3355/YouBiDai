@@ -9,6 +9,7 @@
 #import "SWMineController.h"
 #import "SWLoginController.h"
 #import "SWNavController.h"
+#import "SWCertifiCenterController.h"
 
 @interface SWMineController ()
 
@@ -52,6 +53,12 @@
         }
             
             
+            break;
+            case 2:
+        {
+            SWCertifiCenterController *certifi = [SWCertifiCenterController new];
+            [self.navigationController pushViewController:certifi animated:YES];
+        }
             break;
             
         default:
