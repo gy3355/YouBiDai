@@ -19,6 +19,7 @@ pod 'MBProgressHUD', '~> 0.9.2'
 pod 'TZImagePickerController', '~> 2.1.1'
 pod 'YYKit', '~> 1.0.9'
 pod 'Masonry','~> 1.1.0'
+pod 'UICountingLabel'
 end
 
 

@@ -48,10 +48,26 @@
 //    UIBarButtonItem *back=[[UIBarButtonItem alloc]initWithCustomView:btn];
 //    viewController.navigationItem.backBarButtonItem = back;
     
-    UIBarButtonItem*btn_back = [[UIBarButtonItem alloc]init];
-    btn_back.title = @"";
-    btn_back.tintColor = GM_GaryColor;
-    viewController.navigationItem.backBarButtonItem = btn_back;
+    //系统染色
+//    UIBarButtonItem*btn_back = [[UIBarButtonItem alloc]init];
+//    btn_back.title = @"";
+//    btn_back.tintColor = GM_GaryColor;
+//    viewController.navigationItem.backBarButtonItem = btn_back;
+//
+
+    //设置返回自定义样式图片
+    
+    UIImage *image = [UIImage imageNamed:@"fh"];
+
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:nil action:nil];
+    buttonItem.tintColor = GM_GaryColor;
+    
+    viewController.navigationItem.backBarButtonItem = buttonItem;
+    [[UINavigationBar appearance] setBackIndicatorImage:[[UIImage alloc]init]];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[[UIImage alloc] init]];
+
+    
+    
     self.navigationBarHidden = NO;
     if (self.viewControllers.count==0) {
 //        viewController.navigationItem.leftBarButtonItem = nil;
@@ -69,6 +85,7 @@
 
 
 - (void)returnBack{
+    NSLog(@"888");
     [self popViewControllerAnimated:YES];
 }
 @end

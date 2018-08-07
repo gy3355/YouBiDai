@@ -10,4 +10,6 @@
 
 @interface SWTabbarController : UITabBarController
 
+@property (nonatomic,strong)NSNumber *clickIndex;
+
 @end

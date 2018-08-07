@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"认证中心";
     GMViewBorderRadius(self.sureBtn, 5, 0, [UIColor clearColor]);
 }
 

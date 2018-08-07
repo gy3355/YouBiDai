@@ -50,6 +50,16 @@
 }
 /*确认注册**/
 - (IBAction)sureRegister:(UIButton *)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    //成功后调用
+    UITabBarController *tab = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController;
+    NSNumber *idx = [tab valueForKey:@"clickIndex"];
+    if (idx.integerValue>=tab.childViewControllers.count) {
+        tab.selectedIndex = 0;
+    }else{
+        tab.selectedIndex = idx.integerValue;
+    }
 }
 /*返回登录页**/
 - (IBAction)backToLogin:(UIButton *)sender {

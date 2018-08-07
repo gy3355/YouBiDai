@@ -27,10 +27,21 @@
 /*关闭视图**/
 - (IBAction)clickCloseView:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+
 }
 
 /*登录**/
 - (IBAction)login:(UIButton *)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    //成功后调用
+    UITabBarController *tab = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController;
+    NSNumber *idx = [tab valueForKey:@"clickIndex"];
+    if (idx.integerValue>=tab.childViewControllers.count) {
+        tab.selectedIndex = 0;
+    }else{
+        tab.selectedIndex = idx.integerValue;
+    }
     
 }
 

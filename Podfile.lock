@@ -23,6 +23,7 @@ PODS:
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
   - TZImagePickerController (2.1.9)
+  - UICountingLabel (1.4.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.15.3)
   - SDWebImage (~> 4.3.3)
   - TZImagePickerController (~> 2.1.1)
+  - UICountingLabel
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
@@ -48,6 +50,7 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
     - TZImagePickerController
+    - UICountingLabel
     - YYKit
 
 SPEC CHECKSUMS:
@@ -59,8 +62,9 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   TZImagePickerController: 6c9721783063edafc9ad42cd95acc82f1b648485
+  UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: d64376493c0c1f64d52dcd016e65e34c469188b2
+PODFILE CHECKSUM: d57bede4b7d80b1254a048dc3ea6fdc9ffa1f86e
 
 COCOAPODS: 1.5.3

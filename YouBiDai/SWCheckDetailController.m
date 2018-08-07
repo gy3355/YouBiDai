@@ -35,7 +35,7 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H-GMNavBarHeight) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = GM_GaryLColor;
@@ -77,9 +77,11 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
+    
     if (cell==nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"myCell"];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSArray *arr = self.dataArr[indexPath.row];
     cell.textLabel.text = arr.firstObject;
     cell.detailTextLabel.text = arr.lastObject;

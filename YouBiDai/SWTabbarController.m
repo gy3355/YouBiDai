@@ -11,9 +11,9 @@
 #import "SWFirstPageController.h"
 #import "SWBorrowController.h"
 #import "SWMineController.h"
+#import "SWLoginController.h"
 
-
-@interface SWTabbarController ()
+@interface SWTabbarController ()<UITabBarDelegate,UITabBarControllerDelegate>
 
 @end
 
@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.delegate = self;
     [self addChildVc:[[SWFirstPageController alloc]init] title:@"首页" navtitle:@"首页"  image:@"sy_1" selectedImage:@"sy"];
 
     [self addChildVc:[SWBorrowController  new] title:@"借款" navtitle:@"抵押借款" image:@"jk_1" selectedImage:@"jk"];
@@ -51,5 +52,26 @@
     SWNavController *nav = [[SWNavController alloc]initWithRootViewController:childVc];
     [self addChildViewController:nav];
     
+}
+
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    //是否登录
+    BOOL isLogin = NO;
+    if (isLogin) {
+        return YES;
+    }
+    UIViewController *vc = viewController.childViewControllers.firstObject;
+    if ([NSStringFromClass([vc class] ) isEqualToString:@"SWMineController"]) {
+        SWLoginController *login = [[SWLoginController alloc]init];
+        SWNavController  *nav = [[SWNavController  alloc]initWithRootViewController:login];
+        [vc presentViewController:nav animated:YES completion:nil];
+        return NO;
+    }
+    return YES;
+}
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    NSInteger index = [tabBar.items indexOfObject:item];
+    self.clickIndex = @(index);
 }
 @end

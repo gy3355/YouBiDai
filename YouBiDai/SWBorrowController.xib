@@ -16,6 +16,8 @@
                 <outlet property="bType" destination="bRw-87-H9N" id="nUp-bL-SuP"/>
                 <outlet property="certifiBtn" destination="q1Q-21-TEZ" id="DdV-Xb-1ix"/>
                 <outlet property="daysLab" destination="lul-dZ-Was" id="Oqu-NE-LxX"/>
+                <outlet property="mainContent" destination="1JG-qs-LFX" id="IAY-Nu-f0g"/>
+                <outlet property="scrollView" destination="r6m-Rb-iZg" id="I4M-as-CFe"/>
                 <outlet property="tipsBtn" destination="BGi-Vv-sS8" id="r7C-1v-gRy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -86,8 +88,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥ 20000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JG-qs-LFX">
-                                            <rect key="frame" x="96.5" y="56" width="152" height="49"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥ 20000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JG-qs-LFX" customClass="UICountingLabel">
+                                            <rect key="frame" x="0.0" y="56" width="345" height="49"/>
                                             <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -120,12 +122,14 @@
                                         <constraint firstAttribute="bottom" secondItem="d0a-3A-WeX" secondAttribute="bottom" id="3fh-13-ApK"/>
                                         <constraint firstItem="id3-qE-JS1" firstAttribute="top" secondItem="q09-yg-VZA" secondAttribute="bottom" id="HW2-hO-QLQ"/>
                                         <constraint firstAttribute="trailing" secondItem="fqL-UV-leP" secondAttribute="trailing" id="KUR-GJ-SSo"/>
+                                        <constraint firstItem="1JG-qs-LFX" firstAttribute="leading" secondItem="kPc-Z0-YyS" secondAttribute="leading" id="KdA-cI-ldj"/>
                                         <constraint firstItem="fqL-UV-leP" firstAttribute="top" secondItem="1JG-qs-LFX" secondAttribute="bottom" constant="20" id="NrJ-Ue-68Y"/>
                                         <constraint firstItem="iVs-tG-GV7" firstAttribute="top" secondItem="fqL-UV-leP" secondAttribute="bottom" constant="10" id="SZ8-uy-AVP"/>
                                         <constraint firstItem="q09-yg-VZA" firstAttribute="leading" secondItem="kPc-Z0-YyS" secondAttribute="leading" constant="15" id="Si7-Gn-a5q"/>
                                         <constraint firstItem="d0a-3A-WeX" firstAttribute="leading" secondItem="kPc-Z0-YyS" secondAttribute="leading" id="ZUA-8K-5fb"/>
                                         <constraint firstItem="fqL-UV-leP" firstAttribute="leading" secondItem="kPc-Z0-YyS" secondAttribute="leading" id="aXH-8x-4Cx"/>
                                         <constraint firstAttribute="trailing" secondItem="d0a-3A-WeX" secondAttribute="trailing" id="csd-1H-qX7"/>
+                                        <constraint firstAttribute="trailing" secondItem="1JG-qs-LFX" secondAttribute="trailing" id="is5-Rj-uDy"/>
                                         <constraint firstItem="2FQ-mA-LTS" firstAttribute="centerY" secondItem="iVs-tG-GV7" secondAttribute="centerY" id="lkj-z9-v4j"/>
                                         <constraint firstItem="id3-qE-JS1" firstAttribute="leading" secondItem="q09-yg-VZA" secondAttribute="leading" id="lvO-sZ-UvZ"/>
                                         <constraint firstItem="q09-yg-VZA" firstAttribute="top" secondItem="kPc-Z0-YyS" secondAttribute="top" constant="15" id="mK8-lt-yq6"/>

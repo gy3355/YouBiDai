@@ -18,7 +18,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *daysLab;
 @property (weak, nonatomic) IBOutlet UIButton *applyBtn;
 
+//主要显示
+@property (weak, nonatomic) IBOutlet UICountingLabel *mainContent;
 
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong,nonatomic)DYO_PickView *pickView;
 
 @end
@@ -37,6 +41,11 @@
     [rightBtn addTarget:self action:@selector(clickBorrowRecord) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
     GMViewBorderRadius(self.applyBtn, 5, 0, [UIColor clearColor]);
+    
+    self.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeaderScroll)];
+    
+    
+    
 }
 
 #pragma mark 交互
@@ -55,11 +64,25 @@
     
 }
 - (IBAction)selectDate:(UISlider *)sender {
+
+    self.mainContent.method = UILabelCountingMethodEaseIn;
+    //设置格式
+    self.mainContent.format = @"%f";
+    //设置变化范围及动画时间
+    [self.mainContent countFrom:0.00
+                         to:(sender.value)
+               withDuration:1.5f];
+    
+   
+    
     
     NSInteger index = round(sender.value);
     NSLog(@"%lf--%ld",sender.value,index);
     sender.value = index;
     self.daysLab.text = [NSString stringWithFormat:@"%ld天",7+index];
+    
+    
+    
 }
 
 /* 申请借款确认**/
@@ -76,6 +99,12 @@
                       ];
     [self.navigationController pushViewController:check animated:YES];
     
+}
+
+#pragma mark 头部刷新
+-(void)refreshHeaderScroll{
+    NSLog(@"刷新成功");
+    [self.scrollView.mj_header endRefreshing];
 }
 
 #pragma mark 懒加载
