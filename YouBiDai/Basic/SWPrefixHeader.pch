@@ -19,7 +19,8 @@
 #import <MBProgressHUD.h>
 #import "DYO_PickView.h"
 #import <YYKit.h>
-#import <IQKeyboardManager.h> 
+#import <IQKeyboardManager.h>
+#import "SWFunc.h"
 //颜色
 
 #define GM_COLOR(f1,f2,f3,f4) [UIColor colorWithRed:f1/255.0 green:f2/255.0 blue:f3/255.0 alpha:f4]

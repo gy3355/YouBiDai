@@ -14,6 +14,7 @@
 		1C4DE14D2118277A0038BBE8 /* SWRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4DE14B2118277A0038BBE8 /* SWRegisterController.xib */; };
 		1C4DE1512119389D0038BBE8 /* SWCertifiCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DE14F2119389C0038BBE8 /* SWCertifiCenterController.m */; };
 		1C4DE1522119389D0038BBE8 /* SWCertifiCenterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4DE1502119389C0038BBE8 /* SWCertifiCenterController.xib */; };
+		1C4DE155211950140038BBE8 /* SWFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DE154211950140038BBE8 /* SWFunc.m */; };
 		1C808A412114367E0031BF2C /* SWBorrowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A3F2114367E0031BF2C /* SWBorrowController.m */; };
 		1C808A422114367E0031BF2C /* SWBorrowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C808A402114367E0031BF2C /* SWBorrowController.xib */; };
 		1C808A4521145FFA0031BF2C /* DYO_PickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C808A4421145FFA0031BF2C /* DYO_PickView.m */; };
@@ -72,6 +73,8 @@
 		1C4DE14E2119389C0038BBE8 /* SWCertifiCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWCertifiCenterController.h; sourceTree = "<group>"; };
 		1C4DE14F2119389C0038BBE8 /* SWCertifiCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWCertifiCenterController.m; sourceTree = "<group>"; };
 		1C4DE1502119389C0038BBE8 /* SWCertifiCenterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWCertifiCenterController.xib; sourceTree = "<group>"; };
+		1C4DE153211950140038BBE8 /* SWFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWFunc.h; sourceTree = "<group>"; };
+		1C4DE154211950140038BBE8 /* SWFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWFunc.m; sourceTree = "<group>"; };
 		1C808A3E2114367E0031BF2C /* SWBorrowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBorrowController.h; sourceTree = "<group>"; };
 		1C808A3F2114367E0031BF2C /* SWBorrowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBorrowController.m; sourceTree = "<group>"; };
 		1C808A402114367E0031BF2C /* SWBorrowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWBorrowController.xib; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				35D571B92111AB2100015D77 /* UIView+Extension.h */,
 				35D571BA2111AB2100015D77 /* UIView+Extension.m */,
 				35D571B721119D6F00015D77 /* SWPrefixHeader.pch */,
+				1C4DE153211950140038BBE8 /* SWFunc.h */,
+				1C4DE154211950140038BBE8 /* SWFunc.m */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				1C4DE14C2118277A0038BBE8 /* SWRegisterController.m in Sources */,
 				1C4DE1512119389D0038BBE8 /* SWCertifiCenterController.m in Sources */,
 				1C808A4821153F630031BF2C /* SWCheckDetailController.m in Sources */,
+				1C4DE155211950140038BBE8 /* SWFunc.m in Sources */,
 				35D571C321129CB400015D77 /* StatusExistBorrowView.m in Sources */,
 				35D571AD21118C7F00015D77 /* SWFirstPageController.m in Sources */,
 				35D57183211186A400015D77 /* main.m in Sources */,
