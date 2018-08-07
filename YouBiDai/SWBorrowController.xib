@@ -202,7 +202,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aed-dc-Klk" userLabel="金额">
                                     <rect key="frame" x="0.0" y="61" width="375" height="60"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入金额(不低于2000元)" textAlignment="right" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-W3-C5L">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入金额(不低于1000元)" textAlignment="right" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-W3-C5L">
                                             <rect key="frame" x="120" y="0.0" width="240" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="240" id="qsJ-pd-O7s"/>
