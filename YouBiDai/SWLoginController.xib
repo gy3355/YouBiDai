@@ -14,6 +14,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWLoginController">
             <connections>
                 <outlet property="loginBtn" destination="SpU-KC-v8B" id="77P-aV-4cZ"/>
+                <outlet property="passwordNum" destination="cIB-jQ-jBu" id="h0Y-L7-g7B"/>
+                <outlet property="phoneNum" destination="8dc-2E-Bgs" id="I6e-Dq-uz9"/>
+                <outlet property="secureSwitch" destination="BtE-TR-mHW" id="9AP-bB-Qc3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -49,13 +52,13 @@
                     <rect key="frame" x="67" y="200" width="293" height="17"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入登录密码(6~20位)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-jQ-jBu">
-                    <rect key="frame" x="20" y="253" width="340" height="17"/>
+                    <rect key="frame" x="20" y="253" width="295" height="17"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad" returnKeyType="go" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpU-KC-v8B">
                     <rect key="frame" x="15" y="326" width="345" height="50"/>
@@ -137,10 +140,22 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtE-TR-mHW">
+                    <rect key="frame" x="325" y="233" width="40" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="dMy-xY-DwI"/>
+                    </constraints>
+                    <state key="normal" image="by"/>
+                    <state key="selected" image="ky"/>
+                    <connections>
+                        <action selector="clickSecureSwitch:" destination="-1" eventType="touchUpInside" id="ivF-ar-wGR"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="bD4-fK-JUF" firstAttribute="leading" secondItem="r4O-vB-FmE" secondAttribute="trailing" constant="20" id="0aT-lE-KE1"/>
+                <constraint firstItem="nbd-X3-kQr" firstAttribute="top" secondItem="BtE-TR-mHW" secondAttribute="bottom" id="4gp-eY-HpI"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="bmP-UO-JwV" secondAttribute="bottom" constant="30" id="5oG-bS-P19"/>
                 <constraint firstItem="nbd-X3-kQr" firstAttribute="top" secondItem="cIB-jQ-jBu" secondAttribute="bottom" constant="15" id="7v1-I6-rMd"/>
                 <constraint firstItem="KJy-GF-Fc3" firstAttribute="top" secondItem="8dc-2E-Bgs" secondAttribute="bottom" constant="15" id="81t-93-7Wy"/>
@@ -153,7 +168,7 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SpU-KC-v8B" secondAttribute="trailing" constant="15" id="OzT-Ck-4Ir"/>
                 <constraint firstItem="cIB-jQ-jBu" firstAttribute="leading" secondItem="47Q-3F-VRI" secondAttribute="leading" id="RDV-Ng-pSF"/>
                 <constraint firstItem="bmP-UO-JwV" firstAttribute="centerY" secondItem="0dZ-Jt-CMu" secondAttribute="centerY" id="Sx4-bF-aI6"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cIB-jQ-jBu" secondAttribute="trailing" constant="15" id="TlW-Jx-FgQ"/>
+                <constraint firstItem="BtE-TR-mHW" firstAttribute="leading" secondItem="cIB-jQ-jBu" secondAttribute="trailing" constant="10" id="Uyz-cv-lmU"/>
                 <constraint firstItem="r4O-vB-FmE" firstAttribute="top" secondItem="SpU-KC-v8B" secondAttribute="bottom" constant="30" id="XQs-ox-JTy"/>
                 <constraint firstItem="r4O-vB-FmE" firstAttribute="centerX" secondItem="SpU-KC-v8B" secondAttribute="centerX" id="ZQM-f2-A8O"/>
                 <constraint firstItem="47Q-3F-VRI" firstAttribute="centerY" secondItem="8dc-2E-Bgs" secondAttribute="centerY" id="Zev-9o-78a"/>
@@ -170,6 +185,8 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8dc-2E-Bgs" secondAttribute="trailing" constant="15" id="nAd-7M-mpP"/>
                 <constraint firstItem="cIB-jQ-jBu" firstAttribute="top" secondItem="KJy-GF-Fc3" secondAttribute="bottom" constant="20" id="npW-c8-rdZ"/>
                 <constraint firstItem="r4O-vB-FmE" firstAttribute="centerY" secondItem="JoS-FV-XAb" secondAttribute="centerY" id="qB1-yi-iQw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="BtE-TR-mHW" secondAttribute="trailing" constant="10" id="ube-uL-z3n"/>
+                <constraint firstItem="BtE-TR-mHW" firstAttribute="top" secondItem="KJy-GF-Fc3" secondAttribute="bottom" id="v9P-jt-Hhe"/>
                 <constraint firstItem="47Q-3F-VRI" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="yYz-hA-1fc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
@@ -177,7 +194,9 @@
         </view>
     </objects>
     <resources>
+        <image name="by" width="17" height="9"/>
         <image name="cha" width="16" height="15"/>
+        <image name="ky" width="18" height="12"/>
         <image name="moren" width="53" height="53"/>
     </resources>
 </document>

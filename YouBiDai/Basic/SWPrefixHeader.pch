@@ -22,6 +22,9 @@
 #import <IQKeyboardManager.h>
 #import "SWFunc.h"
 #import <UICountingLabel.h>
+#import <AFNetworking.h>
+
+
 //颜色
 
 #define GM_COLOR(f1,f2,f3,f4) [UIColor colorWithRed:f1/255.0 green:f2/255.0 blue:f3/255.0 alpha:f4]
@@ -92,6 +95,23 @@ hud.mode = MBProgressHUDModeText;\
 hud.labelText = Text;\
 [hud hide:YES afterDelay:2.0];
 
+
+//退出moda视图
+#define DismissViewControllerWithTabbarClick \
+\
+[self dismissViewControllerAnimated:YES completion:nil];\
+UITabBarController *tab = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController;\
+NSNumber *idx = [tab valueForKey:@"clickIndex"];\
+if (idx.integerValue>=tab.childViewControllers.count) {\
+    tab.selectedIndex = 0;\
+}else{\
+    tab.selectedIndex = idx.integerValue;\
+}
+
+
+
+#pragma mark 服务器相关
+#define YouBiDaiUrl @"http://api.ubidai.io"
 
 #endif /* SWPrefixHeader_pch */
 
